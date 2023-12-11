@@ -1,6 +1,6 @@
 'use client'
 
-import NextImage from 'next/image'
+import NextImage from '@/components/next-image'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Image } from '@/types'
 import { cn } from '@/lib/utils'
