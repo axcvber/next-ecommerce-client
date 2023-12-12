@@ -1,7 +1,10 @@
 import { getPlaiceholder } from 'plaiceholder'
 
-export default async function getBase64(imageUrl: string) {
+export default async function getBase64(imageUrl?: string) {
   try {
+    if (!imageUrl) {
+      return undefined
+    }
     const res = await fetch(imageUrl)
 
     if (!res.ok) {

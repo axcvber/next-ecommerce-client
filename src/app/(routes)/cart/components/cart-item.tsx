@@ -1,3 +1,5 @@
+'use client'
+
 import { Trash2, X } from 'lucide-react'
 
 import Currency from '@/components/ui/currency'
@@ -5,6 +7,7 @@ import useCart from '@/hooks/use-cart'
 import { Product } from '@/types'
 import { Button } from '@/components/ui/button'
 import NextImage from '@/components/next-image'
+import getBase64 from '@/lib/get-base-64'
 
 interface CartItemProps {
   data: Product

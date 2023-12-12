@@ -7,9 +7,9 @@ interface INextImage extends ImageProps {
 }
 
 const NextImage: React.FC<INextImage> = async ({ blured = true, ...props }) => {
-  const myBlurDataUrl = await getBase64(props.src as string)
+  // const myBlurDataUrl = await getBase64(props.src as string)
 
-  return <Image {...props} placeholder='blur' blurDataURL={myBlurDataUrl} className={'duration-700 ease-in-out'} />
+  return <Image {...props} className={'duration-700 ease-in-out'} />
 }
 
 export default NextImage
